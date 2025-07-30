@@ -66,34 +66,12 @@
           <span class="text-xl font-bold text-primary">石榴小说</span>
         </a>
         
-        <!-- 导航链接 - 桌面版 -->
-        <nav class="hidden md:flex items-center space-x-8">
-          <a href="#" class="font-medium text-primary hover:text-secondary transition-colors">首页</a>
-          <a href="#categories" class="font-medium hover:text-primary transition-colors">分类</a>
-          <a href="#rankings" class="font-medium hover:text-primary transition-colors">排行</a>
-          <a href="#latest" class="font-medium hover:text-primary transition-colors">最新</a>
-        </nav>
-        
         <!-- 搜索框 -->
         <div class="hidden md:flex items-center relative">
           <input type="text" placeholder="搜索小说、作者..." class="pl-10 pr-4 py-2 rounded-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary/30 w-64 transition-all duration-300">
           <i class="fa fa-search absolute left-4 text-gray-400"></i>
         </div>
         
-        <!-- 用户操作 -->
-        <div class="flex items-center space-x-4">
-          <!-- <button class="hidden md:block px-4 py-2 rounded-full bg-primary text-white hover:bg-secondary transition-colors">
-            <i class="fa fa-user-plus mr-2"></i>注册
-          </button>
-          <button class="hidden md:block px-4 py-2 rounded-full border border-primary text-primary hover:bg-primary/5 transition-colors">
-            <i class="fa fa-sign-in mr-2"></i>登录
-          </button> -->
-          
-          <!-- 移动端菜单按钮 -->
-          <button id="mobile-menu-button" class="md:hidden text-dark hover:text-primary">
-            <i class="fa fa-bars text-xl"></i>
-          </button>
-        </div>
       </div>
     </div>
     
@@ -135,27 +113,11 @@
             探索无限精彩的<br>小说世界
           </h1>
           <p class="text-[clamp(1rem,2vw,1.25rem)] text-gray-200 mb-8 max-w-md">
-            石榴小说为您提供海量正版小说，随时随地畅享阅读乐趣
+            石榴小说为您提供短小说，快速阅读。
           </p>
-          <div class="flex flex-wrap gap-4">
-            <button class="px-6 py-3 bg-primary hover:bg-secondary rounded-full text-white font-medium transition-all transform hover:scale-105 shadow-lg">
-              <i class="fa fa-book mr-2"></i>开始阅读
-            </button>
-            <button class="px-6 py-3 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full text-white font-medium transition-all">
-              <i class="fa fa-compass mr-2"></i>发现更多
-            </button>
-          </div>
         </div>
       </div>
-      
-      <!-- 轮播指示器 -->
-      <div class="absolute bottom-6 left-0 right-0 flex justify-center z-20">
-        <div class="flex space-x-2">
-          <button class="w-3 h-3 rounded-full bg-white/50"></button>
-          <button class="w-3 h-3 rounded-full bg-white"></button>
-          <button class="w-3 h-3 rounded-full bg-white/50"></button>
-        </div>
-      </div>
+  
     </section>
     
     <!-- 热门推荐 -->
@@ -163,18 +125,15 @@
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center mb-8">
           <h2 class="text-2xl md:text-3xl font-bold flex items-center">
-            <i class="fa fa-fire text-primary mr-3"></i>热门推荐
+            <i class="fa fa-fire text-primary mr-3"></i>热门小说
           </h2>
-          <a href="#" class="text-primary hover:text-secondary flex items-center">
-            查看全部 <i class="fa fa-angle-right ml-1"></i>
-          </a>
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- 小说卡片 1 -->
-          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
+          <a href="novels/xianni/index.html" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group block">
             <div class="relative h-64 overflow-hidden">
-              <img src="https://picsum.photos/id/24/400/600" alt="小说封面" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="./novels/xianni/cover.jpeg" alt="小说封面" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div class="absolute top-3 left-3 bg-primary text-white text-xs px-2 py-1 rounded">热门</div>
               <div class="absolute bottom-0 left-0 right-0 bg-gradient-overlay p-3">
                 <div class="flex justify-between items-end">
@@ -189,115 +148,16 @@
               </div>
             </div>
             <div class="p-4">
-              <h3 class="font-bold text-lg mb-1 group-hover:text-primary transition-colors">天道主宰</h3>
-              <p class="text-gray-600 text-sm mb-3 line-clamp-2">一个平凡少年，觉醒逆天血脉，踏上主宰天道之路，逆天改命，成就无上至尊。</p>
+              <h3 class="font-bold text-lg mb-1 group-hover:text-primary transition-colors">仙逆</h3>
+              <p class="text-gray-600 text-sm mb-3 line-clamp-2">村平凡少年王林,为了心中不屈的信念踏入仙门修行,克服天资不足的困境,逆流而上,积极面对苦难与挑战,不断突破自我,最终将命运始终牢牢地把握在自己手中!</p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center">
                   <img src="https://picsum.photos/id/64/100/100" alt="作者头像" class="w-6 h-6 rounded-full mr-2">
-                  <span class="text-gray-500 text-xs">风凌天下</span>
-                </div>
-                <div class="text-primary text-sm flex items-center">
-                  <i class="fa fa-star mr-1"></i> 4.9
+                  <span class="text-gray-500 text-xs">耳根</span>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <!-- 小说卡片 2 -->
-          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
-            <div class="relative h-64 overflow-hidden">
-              <img src="https://picsum.photos/id/27/400/600" alt="小说封面" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-              <div class="absolute top-3 left-3 bg-secondary text-white text-xs px-2 py-1 rounded">畅销</div>
-              <div class="absolute bottom-0 left-0 right-0 bg-gradient-overlay p-3">
-                <div class="flex justify-between items-end">
-                  <div>
-                    <span class="text-white text-sm font-medium">都市</span>
-                    <span class="text-white/80 text-xs ml-2">已完结</span>
-                  </div>
-                  <div class="text-white text-sm flex items-center">
-                    <i class="fa fa-eye mr-1"></i> 456.2万
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4">
-              <h3 class="font-bold text-lg mb-1 group-hover:text-primary transition-colors">都市至尊神医</h3>
-              <p class="text-gray-600 text-sm mb-3 line-clamp-2">一代神医回归都市，凭借高超医术和神秘身份，守护家人，踏上巅峰之路。</p>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                  <img src="https://picsum.photos/id/65/100/100" alt="作者头像" class="w-6 h-6 rounded-full mr-2">
-                  <span class="text-gray-500 text-xs">妙手仁心</span>
-                </div>
-                <div class="text-primary text-sm flex items-center">
-                  <i class="fa fa-star mr-1"></i> 4.8
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- 小说卡片 3 -->
-          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
-            <div class="relative h-64 overflow-hidden">
-              <img src="https://picsum.photos/id/30/400/600" alt="小说封面" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-              <div class="absolute top-3 left-3 bg-accent text-white text-xs px-2 py-1 rounded">精品</div>
-              <div class="absolute bottom-0 left-0 right-0 bg-gradient-overlay p-3">
-                <div class="flex justify-between items-end">
-                  <div>
-                    <span class="text-white text-sm font-medium">科幻</span>
-                    <span class="text-white/80 text-xs ml-2">连载中</span>
-                  </div>
-                  <div class="text-white text-sm flex items-center">
-                    <i class="fa fa-eye mr-1"></i> 187.9万
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4">
-              <h3 class="font-bold text-lg mb-1 group-hover:text-primary transition-colors">星际争霸：人类使命</h3>
-              <p class="text-gray-600 text-sm mb-3 line-clamp-2">在未来星际时代，人类面临外星文明威胁，一名普通士兵如何带领人类走向宇宙巅峰。</p>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                  <img src="https://picsum.photos/id/66/100/100" alt="作者头像" class="w-6 h-6 rounded-full mr-2">
-                  <span class="text-gray-500 text-xs">银河霸主</span>
-                </div>
-                <div class="text-primary text-sm flex items-center">
-                  <i class="fa fa-star mr-1"></i> 4.7
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- 小说卡片 4 -->
-          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
-            <div class="relative h-64 overflow-hidden">
-              <img src="https://picsum.photos/id/36/400/600" alt="小说封面" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-              <div class="absolute top-3 left-3 bg-primary text-white text-xs px-2 py-1 rounded">推荐</div>
-              <div class="absolute bottom-0 left-0 right-0 bg-gradient-overlay p-3">
-                <div class="flex justify-between items-end">
-                  <div>
-                    <span class="text-white text-sm font-medium">武侠</span>
-                    <span class="text-white/80 text-xs ml-2">已完结</span>
-                  </div>
-                  <div class="text-white text-sm flex items-center">
-                    <i class="fa fa-eye mr-1"></i> 321.4万
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4">
-              <h3 class="font-bold text-lg mb-1 group-hover:text-primary transition-colors">剑影侠踪</h3>
-              <p class="text-gray-600 text-sm mb-3 line-clamp-2">江湖恩怨，儿女情长，一把神剑引发的江湖血雨腥风，看少年如何成为一代大侠。</p>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                  <img src="https://picsum.photos/id/67/100/100" alt="作者头像" class="w-6 h-6 rounded-full mr-2">
-                  <span class="text-gray-500 text-xs">独孤求败</span>
-                </div>
-                <div class="text-primary text-sm flex items-center">
-                  <i class="fa fa-star mr-1"></i> 4.9
-                </div>
-              </div>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -371,436 +231,7 @@
         </div>
       </div>
     </section>
-    
-    <!-- 排行榜 -->
-    <section id="rankings" class="py-12">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center mb-8">
-          <h2 class="text-2xl md:text-3xl font-bold flex items-center">
-            <i class="fa fa-trophy text-primary mr-3"></i>小说排行
-          </h2>
-          <div class="flex space-x-2">
-            <button class="px-4 py-2 rounded-full bg-primary text-white text-sm">周榜</button>
-            <button class="px-4 py-2 rounded-full bg-gray-200 text-gray-700 text-sm hover:bg-gray-300 transition-colors">月榜</button>
-            <button class="px-4 py-2 rounded-full bg-gray-200 text-gray-700 text-sm hover:bg-gray-300 transition-colors">总榜</button>
-          </div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- 玄幻奇幻榜 -->
-          <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <div class="bg-primary text-white p-4">
-              <h3 class="font-bold text-lg flex items-center">
-                <i class="fa fa-fire mr-2"></i>玄幻奇幻榜
-              </h3>
-            </div>
-            <div class="p-4">
-              <ul class="space-y-3">
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center font-bold mr-3">1</span>
-                  <img src="https://picsum.photos/id/24/100/150" alt="小说封面" class="w-12 h-16 object-cover mr-3 rounded">
-                  <div class="flex-1">
-                    <h4 class="font-medium">天道主宰</h4>
-                    <p class="text-xs text-gray-500">风凌天下</p>
-                  </div>
-                  <div class="text-primary text-sm">4.9</div>
-                </li>
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-secondary text-white flex items-center justify-center font-bold mr-3">2</span>
-                  <img src="https://picsum.photos/id/27/100/150" alt="小说封面" class="w-12 h-16 object-cover mr-3 rounded">
-                  <div class="flex-1">
-                    <h4 class="font-medium">斗破苍穹</h4>
-                    <p class="text-xs text-gray-500">天蚕土豆</p>
-                  </div>
-                  <div class="text-primary text-sm">4.8</div>
-                </li>
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-accent text-white flex items-center justify-center font-bold mr-3">3</span>
-                  <img src="https://picsum.photos/id/30/100/150" alt="小说封面" class="w-12 h-16 object-cover mr-3 rounded">
-                  <div class="flex-1">
-                    <h4 class="font-medium">武动乾坤</h4>
-                    <p class="text-xs text-gray-500">天蚕土豆</p>
-                  </div>
-                  <div class="text-primary text-sm">4.7</div>
-                </li>
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-gray-200 text-gray-700 flex items-center justify-center font-bold mr-3">4</span>
-                  <div class="flex-1">
-                    <h4 class="font-medium">大主宰</h4>
-                    <p class="text-xs text-gray-500">天蚕土豆</p>
-                  </div>
-                  <div class="text-primary text-sm">4.6</div>
-                </li>
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-gray-200 text-gray-700 flex items-center justify-center font-bold mr-3">5</span>
-                  <div class="flex-1">
-                    <h4 class="font-medium">雪鹰领主</h4>
-                    <p class="text-xs text-gray-500">我吃西红柿</p>
-                  </div>
-                  <div class="text-primary text-sm">4.5</div>
-                </li>
-              </ul>
-              <button class="w-full mt-4 py-2 text-center text-primary text-sm hover:bg-primary/5 rounded transition-colors">
-                查看完整榜单 <i class="fa fa-angle-right ml-1"></i>
-              </button>
-            </div>
-          </div>
-          
-          <!-- 都市言情榜 -->
-          <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <div class="bg-secondary text-white p-4">
-              <h3 class="font-bold text-lg flex items-center">
-                <i class="fa fa-building mr-2"></i>都市言情榜
-              </h3>
-            </div>
-            <div class="p-4">
-              <ul class="space-y-3">
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center font-bold mr-3">1</span>
-                  <img src="https://picsum.photos/id/36/100/150" alt="小说封面" class="w-12 h-16 object-cover mr-3 rounded">
-                  <div class="flex-1">
-                    <h4 class="font-medium">都市至尊神医</h4>
-                    <p class="text-xs text-gray-500">妙手仁心</p>
-                  </div>
-                  <div class="text-primary text-sm">4.9</div>
-                </li>
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-secondary text-white flex items-center justify-center font-bold mr-3">2</span>
-                  <img src="https://picsum.photos/id/42/100/150" alt="小说封面" class="w-12 h-16 object-cover mr-3 rounded">
-                  <div class="flex-1">
-                    <h4 class="font-medium">总裁的替身前妻</h4>
-                    <p class="text-xs text-gray-500">安知晓</p>
-                  </div>
-                  <div class="text-primary text-sm">4.8</div>
-                </li>
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-accent text-white flex items-center justify-center font-bold mr-3">3</span>
-                  <img src="https://picsum.photos/id/48/100/150" alt="小说封面" class="w-12 h-16 object-cover mr-3 rounded">
-                  <div class="flex-1">
-                    <h4 class="font-medium">何以笙箫默</h4>
-                    <p class="text-xs text-gray-500">顾漫</p>
-                  </div>
-                  <div class="text-primary text-sm">4.7</div>
-                </li>
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-gray-200 text-gray-700 flex items-center justify-center font-bold mr-3">4</span>
-                  <div class="flex-1">
-                    <h4 class="font-medium">微微一笑很倾城</h4>
-                    <p class="text-xs text-gray-500">顾漫</p>
-                  </div>
-                  <div class="text-primary text-sm">4.6</div>
-                </li>
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-gray-200 text-gray-700 flex items-center justify-center font-bold mr-3">5</span>
-                  <div class="flex-1">
-                    <h4 class="font-medium">杉杉来吃</h4>
-                    <p class="text-xs text-gray-500">顾漫</p>
-                  </div>
-                  <div class="text-primary text-sm">4.5</div>
-                </li>
-              </ul>
-              <button class="w-full mt-4 py-2 text-center text-secondary text-sm hover:bg-secondary/5 rounded transition-colors">
-                查看完整榜单 <i class="fa fa-angle-right ml-1"></i>
-              </button>
-            </div>
-          </div>
-          
-          <!-- 科幻未来榜 -->
-          <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <div class="bg-accent text-white p-4">
-              <h3 class="font-bold text-lg flex items-center">
-                <i class="fa fa-rocket mr-2"></i>科幻未来榜
-              </h3>
-            </div>
-            <div class="p-4">
-              <ul class="space-y-3">
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center font-bold mr-3">1</span>
-                  <img src="https://picsum.photos/id/54/100/150" alt="小说封面" class="w-12 h-16 object-cover mr-3 rounded">
-                  <div class="flex-1">
-                    <h4 class="font-medium">星际争霸：人类使命</h4>
-                    <p class="text-xs text-gray-500">银河霸主</p>
-                  </div>
-                  <div class="text-primary text-sm">4.9</div>
-                </li>
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-secondary text-white flex items-center justify-center font-bold mr-3">2</span>
-                  <img src="https://picsum.photos/id/58/100/150" alt="小说封面" class="w-12 h-16 object-cover mr-3 rounded">
-                  <div class="flex-1">
-                    <h4 class="font-medium">三体</h4>
-                    <p class="text-xs text-gray-500">刘慈欣</p>
-                  </div>
-                  <div class="text-primary text-sm">4.8</div>
-                </li>
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-accent text-white flex items-center justify-center font-bold mr-3">3</span>
-                  <img src="https://picsum.photos/id/60/100/150" alt="小说封面" class="w-12 h-16 object-cover mr-3 rounded">
-                  <div class="flex-1">
-                    <h4 class="font-medium">流浪地球</h4>
-                    <p class="text-xs text-gray-500">刘慈欣</p>
-                  </div>
-                  <div class="text-primary text-sm">4.7</div>
-                </li>
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-gray-200 text-gray-700 flex items-center justify-center font-bold mr-3">4</span>
-                  <div class="flex-1">
-                    <h4 class="font-medium">超新星纪元</h4>
-                    <p class="text-xs text-gray-500">刘慈欣</p>
-                  </div>
-                  <div class="text-primary text-sm">4.6</div>
-                </li>
-                <li class="flex items-center py-2">
-                  <span class="w-6 h-6 rounded-full bg-gray-200 text-gray-700 flex items-center justify-center font-bold mr-3">5</span>
-                  <div class="flex-1">
-                    <h4 class="font-medium">球状闪电</h4>
-                    <p class="text-xs text-gray-500">刘慈欣</p>
-                  </div>
-                  <div class="text-primary text-sm">4.5</div>
-                </li>
-              </ul>
-              <button class="w-full mt-4 py-2 text-center text-accent text-sm hover:bg-accent/5 rounded transition-colors">
-                查看完整榜单 <i class="fa fa-angle-right ml-1"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- 最新更新 -->
-    <section id="latest" class="py-12 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center mb-8">
-          <h2 class="text-2xl md:text-3xl font-bold flex items-center">
-            <i class="fa fa-clock-o text-primary mr-3"></i>最新更新
-          </h2>
-          <a href="#" class="text-primary hover:text-secondary flex items-center">
-            更多更新 <i class="fa fa-angle-right ml-1"></i>
-          </a>
-        </div>
-        
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-          <div class="p-6">
-            <table class="w-full">
-              <thead>
-                <tr class="border-b border-gray-200">
-                  <th class="text-left py-3 px-4 font-medium text-gray-500">小说名称</th>
-                  <th class="text-left py-3 px-4 font-medium text-gray-500">作者</th>
-                  <th class="text-left py-3 px-4 font-medium text-gray-500">分类</th>
-                  <th class="text-left py-3 px-4 font-medium text-gray-500">最新章节</th>
-                  <th class="text-left py-3 px-4 font-medium text-gray-500">更新时间</th>
-                  <th class="text-right py-3 px-4 font-medium text-gray-500">操作</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                  <td class="py-4 px-4">
-                    <div class="flex items-center">
-                      <img src="https://picsum.photos/id/24/100/150" alt="小说封面" class="w-10 h-14 object-cover mr-3 rounded">
-                      <span class="font-medium">天道主宰</span>
-                    </div>
-                  </td>
-                  <td class="py-4 px-4 text-gray-600">风凌天下</td>
-                  <td class="py-4 px-4">
-                    <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">玄幻</span>
-                  </td>
-                  <td class="py-4 px-4 text-gray-600">第1234章 天道降临</td>
-                  <td class="py-4 px-4 text-gray-500 text-sm">今天 08:45</td>
-                  <td class="py-4 px-4 text-right">
-                    <button class="px-3 py-1 bg-primary text-white text-sm rounded hover:bg-secondary transition-colors">
-                      阅读
-                    </button>
-                  </td>
-                </tr>
-                <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                  <td class="py-4 px-4">
-                    <div class="flex items-center">
-                      <img src="https://picsum.photos/id/27/100/150" alt="小说封面" class="w-10 h-14 object-cover mr-3 rounded">
-                      <span class="font-medium">都市至尊神医</span>
-                    </div>
-                  </td>
-                  <td class="py-4 px-4 text-gray-600">妙手仁心</td>
-                  <td class="py-4 px-4">
-                    <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full">都市</span>
-                  </td>
-                  <td class="py-4 px-4 text-gray-600">第987章 震惊全场</td>
-                  <td class="py-4 px-4 text-gray-500 text-sm">今天 07:30</td>
-                  <td class="py-4 px-4 text-right">
-                    <button class="px-3 py-1 bg-primary text-white text-sm rounded hover:bg-secondary transition-colors">
-                      阅读
-                    </button>
-                  </td>
-                </tr>
-                <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                  <td class="py-4 px-4">
-                    <div class="flex items-center">
-                      <img src="https://picsum.photos/id/30/100/150" alt="小说封面" class="w-10 h-14 object-cover mr-3 rounded">
-                      <span class="font-medium">星际争霸：人类使命</span>
-                    </div>
-                  </td>
-                  <td class="py-4 px-4 text-gray-600">银河霸主</td>
-                  <td class="py-4 px-4">
-                    <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded-full">科幻</span>
-                  </td>
-                  <td class="py-4 px-4 text-gray-600">第765章 星际大战</td>
-                  <td class="py-4 px-4 text-gray-500 text-sm">昨天 23:15</td>
-                  <td class="py-4 px-4 text-right">
-                    <button class="px-3 py-1 bg-primary text-white text-sm rounded hover:bg-secondary transition-colors">
-                      阅读
-                    </button>
-                  </td>
-                </tr>
-                <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                  <td class="py-4 px-4">
-                    <div class="flex items-center">
-                      <img src="https://picsum.photos/id/36/100/150" alt="小说封面" class="w-10 h-14 object-cover mr-3 rounded">
-                      <span class="font-medium">剑影侠踪</span>
-                    </div>
-                  </td>
-                  <td class="py-4 px-4 text-gray-600">独孤求败</td>
-                  <td class="py-4 px-4">
-                    <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">武侠</span>
-                  </td>
-                  <td class="py-4 px-4 text-gray-600">第654章 江湖恩怨</td>
-                  <td class="py-4 px-4 text-gray-500 text-sm">昨天 19:40</td>
-                  <td class="py-4 px-4 text-right">
-                    <button class="px-3 py-1 bg-primary text-white text-sm rounded hover:bg-secondary transition-colors">
-                      阅读
-                    </button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50 transition-colors">
-                  <td class="py-4 px-4">
-                    <div class="flex items-center">
-                      <img src="https://picsum.photos/id/42/100/150" alt="小说封面" class="w-10 h-14 object-cover mr-3 rounded">
-                      <span class="font-medium">总裁的替身前妻</span>
-                    </div>
-                  </td>
-                  <td class="py-4 px-4 text-gray-600">安知晓</td>
-                  <td class="py-4 px-4">
-                    <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full">言情</span>
-                  </td>
-                  <td class="py-4 px-4 text-gray-600">第1543章 真相大白</td>
-                  <td class="py-4 px-4 text-gray-500 text-sm">昨天 15:20</td>
-                  <td class="py-4 px-4 text-right">
-                    <button class="px-3 py-1 bg-primary text-white text-sm rounded hover:bg-secondary transition-colors">
-                      阅读
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="bg-gray-50 px-6 py-4 flex justify-between items-center">
-            <div class="text-gray-500 text-sm">显示 1-5 条，共 2,345 条</div>
-            <div class="flex space-x-1">
-              <button class="w-8 h-8 flex items-center justify-center rounded border border-gray-200 text-gray-500 hover:border-primary hover:text-primary transition-colors">
-                <i class="fa fa-angle-left"></i>
-              </button>
-              <button class="w-8 h-8 flex items-center justify-center rounded bg-primary text-white">1</button>
-              <button class="w-8 h-8 flex items-center justify-center rounded border border-gray-200 text-gray-700 hover:border-primary hover:text-primary transition-colors">2</button>
-              <button class="w-8 h-8 flex items-center justify-center rounded border border-gray-200 text-gray-700 hover:border-primary hover:text-primary transition-colors">3</button>
-              <button class="w-8 h-8 flex items-center justify-center rounded border border-gray-200 text-gray-700 hover:border-primary hover:text-primary transition-colors">4</button>
-              <button class="w-8 h-8 flex items-center justify-center rounded border border-gray-200 text-gray-700 hover:border-primary hover:text-primary transition-colors">5</button>
-              <button class="w-8 h-8 flex items-center justify-center rounded border border-gray-200 text-gray-500 hover:border-primary hover:text-primary transition-colors">
-                <i class="fa fa-angle-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- 阅读体验 -->
-    <section class="py-16 bg-gradient-to-r from-dark to-accent text-white">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">极致阅读体验</h2>
-          <p class="text-gray-300 max-w-2xl mx-auto">石榴小说致力于为您提供舒适、便捷的阅读环境，让您随时随地享受阅读的乐趣</p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- 功能项 1 -->
-          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/15 transition-colors">
-            <div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6">
-              <i class="fa fa-mobile text-2xl"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">多设备同步</h3>
-            <p class="text-gray-300">在手机、平板、电脑上无缝切换，随时随地继续您的阅读</p>
-          </div>
-          
-          <!-- 功能项 2 -->
-          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/15 transition-colors">
-            <div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6">
-              <i class="fa fa-moon-o text-2xl"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">护眼模式</h3>
-            <p class="text-gray-300">夜间模式、多种字体选择，长时间阅读也不会感到疲劳</p>
-          </div>
-          
-          <!-- 功能项 3 -->
-          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/15 transition-colors">
-            <div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6">
-              <i class="fa fa-bookmark text-2xl"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">自动书签</h3>
-            <p class="text-gray-300">自动保存阅读进度，下次打开时自动跳转到上次阅读位置</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- 下载APP -->
-    <section class="py-16 bg-light">
-      <div class="container mx-auto px-4">
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div class="grid grid-cols-1 md:grid-cols-2">
-            <div class="p-8 md:p-12 flex flex-col justify-center">
-              <h2 class="text-3xl font-bold mb-4">随时随地，畅享阅读</h2>
-              <p class="text-gray-600 mb-6">下载石榴小说APP，海量正版小说免费阅读，更有独家内容等你来发现</p>
-              <div class="flex flex-wrap gap-4 mb-8">
-                <button class="flex items-center px-6 py-3 bg-dark text-white rounded-lg hover:bg-opacity-90 transition-colors">
-                  <i class="fa fa-apple text-2xl mr-3"></i>
-                  <div class="text-left">
-                    <div class="text-xs">下载</div>
-                    <div class="font-medium">App Store</div>
-                  </div>
-                </button>
-                <button class="flex items-center px-6 py-3 bg-dark text-white rounded-lg hover:bg-opacity-90 transition-colors">
-                  <i class="fa fa-android text-2xl mr-3"></i>
-                  <div class="text-left">
-                    <div class="text-xs">下载</div>
-                    <div class="font-medium">Google Play</div>
-                  </div>
-                </button>
-              </div>
-              <div class="flex items-center">
-                <div class="mr-4">
-                  <img src="https://picsum.photos/id/64/100/100" alt="二维码" class="w-24 h-24 rounded">
-                </div>
-                <div>
-                  <p class="text-gray-600 text-sm mb-1">扫描二维码下载</p>
-                  <div class="flex space-x-3">
-                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                      <i class="fa fa-weixin text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                      <i class="fa fa-weibo text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                      <i class="fa fa-qq text-xl"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="relative h-64 md:h-auto">
-              <img src="https://picsum.photos/id/96/800/600" alt="手机应用界面" class="absolute inset-0 w-full h-full object-cover">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  
   </main>
 
   <!-- 页脚 -->

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仙逆</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f5f0; /* 米白色背景，减轻阅读疲劳 */
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center; /* 标题居中 */
+            color: #2c3e50;
+            margin: 20px 0 30px;
+        }
+        .content {
+            min-height: 400px;
+            margin: 20px 0;
+            line-height: 1.8; /* 增加行高，提高可读性 */
+            font-size: 18px;
+            color: #333;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        button:hover:not(:disabled) {
+            background-color: #45a049;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        /* 章节标题样式 */
+        .chapter-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 30px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        /* 章节内容样式 */
+        .chapter-content {
+            text-indent: 2em; /* 首行缩进 */
+            margin-bottom: 20px;
+            color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>仙逆</h1>
+        <div class="content" id="content"></div>
+        <div class="nav-buttons">
+            <button id="prevBtn" onclick="changePage(-1)">上一页</button>
+            <button id="nextBtn" onclick="changePage(1)">下一页</button>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 1;
+        const totalPages = 4; // 根据实际数据文件数量调整
+
+        // 页面加载时默认加载第一页
+        document.addEventListener('DOMContentLoaded', () => {
+            loadPage(currentPage);
+            updateButtons();
+        });
+
+        // 加载指定页的内容
+        function loadPage(pageNum) {
+            const contentElement = document.getElementById('content');
+            const fileName = `data${pageNum}.txt`;
+
+            fetch(fileName)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('文件加载失败');
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    // 解析文本内容，奇数行为标题，偶数行为内容
+                    const lines = text.split('\n');
+                    let html = '';
+                    
+                    for (let i = 0; i < lines.length; i++) {
+                        const line = lines[i].trim();
+                        if (!line) continue; // 跳过空行
+                        
+                        if (i % 2 === 0) {
+                            // 奇数行(索引为偶数) - 章节标题
+                            html += `<div class="chapter-title">${line}</div>`;
+                        } else {
+                            // 偶数行(索引为奇数) - 章节内容
+                            html += `<div class="chapter-content">${line}</div>`;
+                        }
+                    }
+                    
+                    contentElement.innerHTML = html;
+                    currentPage = pageNum;
+                    updateButtons();
+                })
+                .catch(error => {
+                    contentElement.textContent = `加载失败: ${error.message}`;
+                });
+        }
+
+        // 切换页面
+        function changePage(direction) {
+            const newPage = currentPage + direction;
+            if (newPage >= 1 && newPage <= totalPages) {
+                loadPage(newPage);
+            }
+        }
+
+        // 更新按钮状态
+        function updateButtons() {
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages;
+        }
+    </script>
+</body>
+</html>
